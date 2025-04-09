@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    features = "src/test/java/Feature",  // Update this path to where your feature files actually are
+    features = "src/test/resources/Feature",  // Update this path to where your feature files actually are
     glue = {"Stepdefination", "utils"},
     plugin = {"pretty", "html:target/cucumber-reports"},
     dryRun = false,  // Change to false to actually run the tests
