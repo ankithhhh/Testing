@@ -6,13 +6,12 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-
-    features = "src/test/java/Feature", // Adjust this if your feature files are in a different folder
-
-    glue = {"Stepdefination", "utils"}, // This should match the package of your step definitions
-   plugin = {"pretty", "html:target/cucumber-reports.html", "json:target/cucumber-reports.json"}, // Generates reports
-    monochrome = true // Makes the console output readable
+    features = "src/test/resources/Feature",  // Updated path
+    glue = {"Stepdefination", "utils"},
+    plugin = {"pretty", "html:target/cucumber-reports.html", "json:target/cucumber-reports.json"},
+    monochrome = true
 )
+
 public class TestRunnerTest {
 }
 
