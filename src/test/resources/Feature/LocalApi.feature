@@ -1,9 +1,4 @@
 Feature: Create User API
-  As a client
-  I want to create a new user
-  So that I can verify the API response
-
-
   Scenario: Create a user successfully
   Given the API endpoint is "/users/"
     And I have valid user data from "userData.json"
