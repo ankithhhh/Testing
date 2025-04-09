@@ -6,7 +6,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    features = "src/test/java/Feature", // <- update this to the real path
+    features = "src/test/resources/Feature", // <- update this to the real path
     glue = {"Stepdefination", "utils"},
     plugin = {
         "pretty",
