@@ -6,7 +6,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    features = "src/test/resources/Feature/LocalApi.feature",
+    features = "src/test/resources/Feature",
     glue = {"Stepdefination", "utils"},
     plugin = {"pretty"},
     dryRun = true,
