@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
     features = "src/test/resources/Feature",
-    glue = {"Stepdefination", "utils"},
+    glue = {"stepdefinitions", "utils"},  // Changed from "Stepdefination" to "stepdefinitions"
     plugin = {"pretty", "html:target/cucumber-reports"},
     dryRun = false,
     monochrome = true
@@ -15,4 +15,3 @@ import org.junit.runner.RunWith;
 public class TestRunner {
     // Empty class body
 }
-
